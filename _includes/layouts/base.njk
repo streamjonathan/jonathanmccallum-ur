@@ -96,8 +96,8 @@
 </script>
 {% endif %}
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/feed/">
-<link rel="preload" href="/css/style.css?v=13" as="style">
-<link rel="stylesheet" href="/css/style.css?v=12">
+<link rel="preload" href="/css/style.css?v=14" as="style">
+<link rel="stylesheet" href="/css/style.css?v=14">
 </head>
 <body>
 <a class="skip-link" href="#main">مواد پر جائیں</a>
@@ -105,10 +105,14 @@
   <a class="site-header__title" href="/">Jonathan McCallum</a>
   <button id="theme-toggle" type="button">تاریک</button>
 </header>
+<nav class="return-home-bar" aria-label="English version">
+  <a class="return-home" href="https://jonathanmccallum.com{{ page.url }}">Return home to Jonathan <span lang="ur">· جوناتھن کے پاس واپس جائیں</span></a>
+</nav>
 <main id="main">
 {{ content | safe }}
 </main>
 <footer class="site-footer">
+  <p><a class="return-home" href="https://jonathanmccallum.com{{ page.url }}">Return home to Jonathan <span lang="ur">· جوناتھن کے پاس واپس جائیں</span></a></p>
   <p>{{ site.title }} — <a href="/feed/">RSS feed</a> · <a href="/search/">تلاش</a> · <a href="/privacy/">رازداری</a></p>
   <p>Connect — <a href="https://www.instagram.com/jonamccallum">Instagram</a> · <a href="https://www.threads.com/@jonamccallum">Threads</a> · <a href="https://www.youtube.com/@Jonathanmccallum1">YouTube</a> · <a href="https://jonamccallum.substack.com">Substack</a> · <a href="/feed/">RSS</a></p>
   <p>ہیلو کہیں — <a href="#" data-contact-email data-contact-email-text>مجھے ای میل کریں</a></p>
@@ -116,5 +120,7 @@
 </footer>
 <script src="/js/main.js?v=8" defer></script>
 <script src="/js/contact.js?v=1" defer></script>
+<script src="/js/suggest.js?v=1" defer></script>
+<script src="/js/interview.js?v=1" defer></script>
 </body>
 </html>

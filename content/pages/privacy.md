@@ -42,7 +42,9 @@ The legal basis for the chat is legitimate interest: running a small site that a
 
 ## Children
 
-This site is not aimed at children. If you are under 16, please ask a parent or guardian before writing anything here.
+یہ سائٹ 18 سال سے کم عمر کے لوگوں کے لیے نہیں ہے۔ یہ یسوع پر ایمان کے بارے میں بات کرتی ہے، اور یہ مذہبی مواد ہے، اس لیے یہ بڑوں کے لیے لکھی گئی ہے۔ اگر آپ کی عمر 18 سال سے کم ہے تو براہ کرم یہاں ذاتی معلومات شیئر نہ کریں، اور جوناتھن کو نہ لکھیں۔
+
+اسپین میں قانون کہتا ہے کہ 14 سال سے کم عمر کے بچے کو آن لائن ذاتی ڈیٹا شیئر کرنے سے پہلے والدین یا سرپرست کی رضامندی چاہیے۔ اس سائٹ کا اپنا قاعدہ اس سے سخت ہے: اگر آپ کی عمر 18 سال سے کم ہے تو یہ سائٹ آپ کے لیے نہیں ہے۔
 
 ## Changes
 

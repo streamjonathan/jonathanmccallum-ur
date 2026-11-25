@@ -166,3 +166,41 @@ document.addEventListener("click", function (e) {
   markDot();
   if (!reduceMotion) start();
 })();
+
+// Writing list "Show more": the homepage list shows 3 articles first;
+// each tap on the button reveals 3 more, and once all are shown the
+// button collapses back to 3 ("Show less"). No-ops when the list or
+// the button is absent, and when the list has 3 or fewer items the
+// button stays hidden. All items stay in the DOM, so search and the
+// archive still reach them; only the class hides them visually.
+(function () {
+  var list = document.querySelector("[data-show-more-list]");
+  var button = document.querySelector("[data-show-more-btn]");
+  if (!list || !button) return;
+  var items = list.children;
+  var STEP = 3;
+  if (items.length <= STEP) return;
+  var shown = STEP;
+  var MORE = "مزید دکھائیں";
+  var LESS = "کم دکھائیں";
+  function render() {
+    for (var i = 0; i < items.length; i++) {
+      items[i].classList.toggle("is-hidden", i >= shown);
+    }
+    var allShown = shown >= items.length;
+    button.textContent = allShown ? LESS : MORE;
+    button.setAttribute("aria-expanded", allShown ? "true" : "false");
+  }
+  button.addEventListener("click", function () {
+    if (shown >= items.length) {
+      shown = STEP;
+      render();
+      list.scrollIntoView();
+    } else {
+      shown = Math.min(shown + STEP, items.length);
+      render();
+    }
+  });
+  button.hidden = false;
+  render();
+})();
